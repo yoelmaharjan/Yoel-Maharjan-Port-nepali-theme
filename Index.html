@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoel Maharjan - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Keyframe animation for subtle background shimmer using Nepal flag colors */
+        @keyframes shimmer {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 0%; }
+        }
+
+        /* Keyframe animation for pulse effect */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* Keyframe animation for slide-in effect */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background: linear-gradient(to right, #DC143C, #003893, #DC143C); /* Crimson and Blue */
+            background-size: 200% 100%;
+            animation: shimmer 15s linear infinite;
+            color: #FFFFFF; /* White */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+        }
+        h1 {
+            color: #FFFFFF; /* White */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: color 0.3s ease, transform 0.3s ease;
+            animation: pulse 5s infinite; /* Apply pulse animation */
+        }
+         h1:hover {
+            color: #DC143C; /* Crimson */
+            transform: scale(1.05);
+        }
+        p {
+            font-size: 18px;
+            color: #FFFFFF; /* White */
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+        p:hover {
+             color: #003893; /* Dark Powder Blue */
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.1); /* White Transparent */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 56, 147, 0.3); /* Dark Powder Blue shadow */
+            width: 80%;
+            max-width: 700px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideIn 1s ease forwards; /* Apply slide-in animation */
+            opacity: 0; /* Initially hide the box */
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 56, 147, 0.5);
+        }
+        .nav {
+            margin-top: 25px;
+        }
+        .nav a {
+            color: #FFFFFF; /* White */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .nav a:hover {
+            color: #DC143C; /* Crimson */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+            animation: pulse 3s infinite; /* Apply pulse animation */
+        }
+        .socials {
+            margin-top: 30px;
+        }
+        .socials a {
+            color: #FFFFFF; /* White */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .socials a:hover {
+            color: #003893; /* Dark Powder Blue */
+            transform: scale(1.2);
+            animation: pulse 3s infinite; /* Apply pulse animation */
+        }
+        .about {
+            background: rgba(255, 255, 255, 0.1); /* White Transparent */
+            margin-top: 50px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 56, 147, 0.3); /* Dark Powder Blue shadow */
+            width: 80%;
+            max-width: 900px;
+            text-align: left;
+            transition: box-shadow 0.3s ease;
+            animation: slideIn 1.5s ease forwards; /* Apply slide-in animation */
+            opacity: 0; /* Initially hide the box */
+        }
+         .about:hover {
+            box-shadow: 0 6px 12px rgba(0, 56, 147, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Yoel Maharjan</h1>
+            <p>Robotics | Aviation | Graphic Design</p>
+            <div class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h2>About Me</h2>
+            <p>Hi, I’m <strong>Yoel Maharjan</strong>, a passionate and driven individual with a deep interest in <strong>robotics, aviation, and graphic design</strong>. I thrive at the intersection of technology and creativity, constantly pushing the boundaries of what’s possible in automation and aerospace engineering. My journey has been shaped by curiosity, innovation, and a relentless drive to make an impact.</p>
+            <p>Currently, I’m a <strong>Grade 12 student from Nepal majoring in Biology</strong>, but my expertise and passion extend far beyond traditional science. I have a profound love for robotics and aviation, which has led me to actively participate in competitions, projects, and workshops that focus on automation and aeronautics.</p>
+            <p>I serve as the <strong>Robotics Captain of Team Arniko</strong>, leading a talented team of engineers and innovators in designing, building, and programming robots for various challenges. My role involves strategic planning, hands-on technical development, and mentoring younger students to help them grow in the field of robotics and AI.</p>
+            <p>Beyond robotics, I work as a <strong>writer at Avio Space</strong>, where I research and write insightful articles about aviation, aerospace engineering, and cutting-edge technologies in the field. My writing blends technical accuracy with engaging storytelling, making complex topics accessible to a wider audience.</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/yoelmaharjan/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/joel.maharjan/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://np.linkedin.com/in/yoel-maharjan-a5b8342a8" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.threads.net/@yoelmaharjan" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>
